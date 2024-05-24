@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  li, a{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+
+  text-decoration: none;
+ 
+  }
+  header nav{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgb(2, 49, 2);
+    
+  }
+  .logo{
+    cursor: pointer;
+  position: relative;
+  left: 20px;
+  top: -75px;
+  border-radius: 50%;
+  box-shadow: 7px 5px 5px 4px black;
+  transition: all 1s  ease-in-out;
+  color: aquamarine;
+}
+  .logo:hover{
+    box-shadow: 7px 5px 5px 4px rgb(79, 3, 3);
+    transform: scale(1.2);
+  }
+  .nav_links {
+    list-style: none;
+    width: 100vw; 
+  }
+  .nav_links,li{
+    display: inline-block;      
+    /* width: 100vw; */
+  }
+   .nav_links li a{
+    padding: 3px 5px;
+    box-shadow: 7px 5px 5px 4px black;
+    transition: all 1s ease 0s;
+  
+  }
+  header nav .nav_links ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   /* width: 100vw; */
+
+
+  }
+ 
+  .nav_links li a:hover{
+    box-shadow: 7px 5px 5px 4px rgb(79, 3, 3);
+    color: rgb(14, 163, 189);
+    transform: scale(1.5);
+  }
+.main{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(2, 49, 2);
+}
+.hi,h1{
+text-shadow: 2px 2px 5px blue ;
+padding-left: 90px;
+width: 16%;
+}
+.hi:hover{
+ transition: all 1s ease-in-out;
+ transform: scale(1.4);
+}
+span{
+  text-shadow: 2px 2px 5px rgb(250, 0, 0) ;
+padding-left: 90px;
+width: 16%;
+}
+.info{
+  outline: 3px solid sandybrown;
+width: 600px;
+
+}
+/* .infos{
+  border-left: 5px solid red;
+  background-color: #f1f1f1;
+  list-style-type: none;
+  padding: 10px 20px;
+  
+} */
+.about-me .personal .colums{
+  width: 50%;
+}
+.info{
+  text-align: center;
+ padding: 50px 20px;
+ font-weight: bold;
+}
+.about-me h2{
+  font-size: 48px;
+  padding: 20px 0px;
+}
+.about-me .personal{
+  display: flex;
+  justify-content: center;
+}
+.info .about-me  p{
+  font: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.info .about-me  p span{
+  font-weight: bold;
+
+}
+ .about-me .personal .colums h3{
+font-size: 28px;
+margin-bottom: 25px;
+
+}
+.about-me .personal .colums ul li{
+  margin: 12px 0;
+}
+.about-me .personal .colums ul li strong{
+  display: inline-block;
+   color: white;
+
+}
+.about-me .personal .colums ul li span{
+color: tomato;
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+ .about-me .personal .colums button{
+  border-radius: 10%;
+}
+.about-me .personal .colums a{
+ border-radius: 15%;
+ padding: 15px 20px;
+ color: rgb(255, 255, 255);
+ 
+ box-shadow: 1px 3px 4px 2px rgb(235, 181, 190);
+ background-color: rgb(0, 0, 0);
+position: relative;
+top: 20px
+}
+.skills{
+ outline: 3px solid salmon;
+ width: 70%;
+ width: 500px;
+ color: white;
+ padding: 20px ;
+ box-shadow: 0 14 28px rebeccapurple;
+}
+.skills li{
+  margin: 20px;
+  padding: 10px;
+}
+h3{
+  margin: 5px;
+}
+.bar{
+  background-color: maroon;
+  transition: all 1s ease-in-out;
+}
+.bar:hover{
+  box-shadow: 10px 2px 2px saddlebrown;
+}
+.bar span{
+  background: transparent;
+ position: relative;
+top: -1px;
+padding: 0;
+}
+.images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.images img{
+  border-radius: 10vh;
+  /* height: 20rem; */
+  width: 290;
+  bottom: 90px;
+  border: 90px yellow;
+  box-shadow: 10px 3px rgb(163, 140, 10);
+  position: relative;
+  top: -1298px;
+  left: 15rem;
+  transition: all 1s ease-in-out;
+}
+
+image,img:hover{
+  box-shadow: 10px 20px 3px 3px blueviolet;
+  transform: scale(1.1);
+}
+.socials{
+  outline: 3px solid green ;
+  margin: 1rem 10px;
+  padding: 20px 3px;
+  text-align: center;
+  background-color: rgb(2, 49, 2);
+}
+.st{
+    position: relative;
+    font-size: 120px;
+    color: black;
+}
+/* .socials h1{
+  margin: 15 px 700px;
+
+} */
+/* .grow{
+
+} */

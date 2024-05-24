@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" type="st rose logo" href="st rose.jpg">
+    <title>SRLCS</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins",sans-serif;
+
+    }  
+    body{
+        height:100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 30px;
+        background-image: url("school3.jpeg");
+      background-size: cover;
+      
+    }
+    .wrapper{
+        max-width: 480px;
+        width: 100%;
+        background: #FFF;
+        padding: 35px 40px;
+        border-radius: 6px;
+        box-shadow: rgba(0, 0, 0, 2);
+    }
+    .wrapper .input-box{
+        position: relative;
+        height: 60px;
+        margin: 25px 0 ;
+        background: rgb(62, 58, 58);
+    }
+    .input-box input{
+        height: 100%;
+        width: 100%;
+        background: #FFF;
+        color: #333;
+        font-size: 18px;
+        font-weight: 500;
+        outline: none;
+        border-radius: 6px;
+        padding: 0 40px 0 16px;
+        border: 2px solid #a6a6a6;
+        transition: all 0.3s ease;
+    }
+    .input-box input:focus{
+        border-color: darkcyan;
+    }
+    .input-box label,
+    .input-box i{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #a6a6a6;
+    }
+    .input-box label{
+        left: 15px;
+        font-size: 18px;
+        font-weight: 400;
+        background: #fff;
+        padding: 0 6px;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+    .input-box input:focus ~ label,
+    .input-box input:valid ~ label{
+        top: 0;
+        color: #4070F4;
+        font-size: 14px;
+    } 
+    .input-box i{
+        right: 15px;
+        padding: 8px;
+        cursor: pointer;
+    }
+    .alert{
+        display: flex;
+        align-items: center;
+        margin-top: -13px;;
+    }
+    .alert .errorIcon{
+margin-right: 8px;
+color: #d93025;
+font-size: 18px;
+display: none;
+    }
+    .alert .text{
+        color: #a6a6a6;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .input-box.button #button{
+        background:#010741 ;
+        border: none;
+        font-size: 20px;
+        color: #FFF;
+        letter-spacing: 1px;
+        cursor: not-allowed;
+
+    }
+    .input-box.button #button.active:hover{
+        background: #4070F4;
+        cursor: pointer;
+
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="input-box">
+            <input id="createPw" type="password" required>
+            <label>Create New Password</label>
+            </div>
+        <div class="input-box">
+            <input id="confirmPw" type="password" required disabled>
+            <label>Confirm Password</label>
+            <i class="fa-solid fa-eye-slash show"></i>
+            </div>
+            <div class="alert">
+                <i class="fas fa-exclamation-circle errorIcon"></i>
+                <span class="text">Enter at least 8 Characters</span>
+                </div>
+        <div class="input-box button">
+            <a href="loginn.html"><input id="button" type="button" value="Confirm" required disabled></a>
+        </div>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>

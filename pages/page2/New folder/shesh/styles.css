@@ -1,0 +1,283 @@
+* 
+
+.header {
+
+   width: 100%;
+   height: 3cm;
+   margin-left: -635px;
+   margin-top: -9.2cm;
+   margin-right: -8px;
+   background-color:rgba(155, 0, 0, 0.527);
+   position: fixed;
+   top:50%;
+   left: 50%;
+}
+
+.header img {
+    
+    width: auto;
+    height: 100%; 
+    margin-left: 40px;
+}
+
+.text  {
+
+    margin-left: 180px;
+    font-size: 30;
+    margin-top: -95px;
+    letter-spacing: 5;
+   color: goldenrod;
+    
+}
+.text1 {
+
+    margin-left: 180px;
+    margin-top: -20px;
+    letter-spacing: 5;
+}
+
+.profile  {
+
+    width:2cm;
+    height:2cm;
+    margin-left:20px;
+    background-color:white ;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 40px;
+    padding-top: 10px;
+    
+   
+    
+    
+}
+
+.profile:hover{
+     
+    background-color: rgb(179, 57, 57);
+    transition-duration: 0.4s;
+}
+
+
+.box1 {
+
+    width:3cm;
+    height: 10cm;
+    background-color: rgba(179, 177, 177, 0.537);
+    margin-top: -200px;
+    margin-left: -16.4cm;
+    border-radius: 20px;
+    position: fixed;
+   top:50%;
+   left: 45%;
+
+ }
+ .School {
+
+    width:2cm;
+    height:2cm;
+    margin-left:20px;
+    background-color:white ;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 10px;
+    padding-top: 10px;
+    
+   
+}
+
+.School:hover{
+     
+    background-color: rgb(179, 57, 57);
+    transition-duration: 0.4s;
+    
+}
+.About {
+
+    width:2cm;
+    height:2cm;
+    margin-left:20px;
+    background-color:white ;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 15px;
+    padding-top: 10px;
+    
+    
+}
+
+.About:hover{
+     
+    background-color: rgb(179, 57, 57);
+    transition-duration: 0.4s;
+}
+
+.text3 {
+
+    margin-left: 4cm;
+    font-size: 50;
+    letter-spacing:7;
+    margin-top: -48cm;
+
+}
+
+.text4 {
+
+    margin-left: 4.6cm;
+    font-size: 25;
+    letter-spacing:5;
+
+}
+.announcements {
+
+    width:15cm;
+    height: 14cm;
+    background-color: rgba(255, 255, 255, 0.772);
+    opacity: 0.7;
+    margin-top: 9cm;
+    margin-left:18cm;
+    border-radius: 8px;
+    overflow-y: scroll;
+
+}
+
+.text5 {
+
+    font-size: 20;
+    letter-spacing:5;
+    text-align: center;
+    margin-top: -50px;
+
+}
+.text6 {
+
+    font-size: 20;
+    letter-spacing:5;
+    text-align: center;
+   
+
+}
+.fa-newspaper {
+
+     margin-left: 50px;
+     margin-top:17px;
+}
+
+
+.Bulletin {
+
+    width:14cm;
+    height: 14cm;
+    background-color: rgba(255, 255, 255, 0.772);
+    opacity: 0.7;
+    margin-top: -14cm;
+    margin-left:3.7cm;
+    border-radius: 8px;
+    overflow-y: scroll;
+    margin-bottom: 100px;
+
+}
+
+.fa-thumbtack {
+
+    margin-left: 50px;
+    margin-top:19px;
+}
+
+.crowns {
+
+    margin-left: 180px;
+    margin-top: -6cm;
+    letter-spacing: 5;
+}
+.crowns1 {
+
+    margin-left:3.9cm;
+    letter-spacing: 8;
+}
+
+
+.T01 {
+
+    margin-left: 140px;
+    letter-spacing: 8px;
+}
+.T02 {
+
+    margin-left: 155px;
+    letter-spacing: 8px;
+    margin-top: -0.6cm;
+
+}
+.T03 {
+
+    margin-left: 150px;
+    letter-spacing: 8px;
+    margin-top: -0.5cm;
+    font-size: 12px;
+    
+}
+.T04 {
+
+    margin-left: 90px;
+    letter-spacing: 8px;
+    margin-top: -0.5cm;
+    font-size: 17px;
+    
+}
+.T05 {
+
+    margin-left: 145px;
+    letter-spacing: 8px;
+    margin-top: 0.1cm;
+    font-size: 12px;
+    
+}
+.text7 {
+
+    margin-left: 1.7cm;
+    letter-spacing: 8px;
+
+}
+.text8 {
+
+    margin-left: 3.6cm;
+    letter-spacing: 8px;
+}
+
+/* mision core values id="content1,collapsible"
+left side box  */
+.collapsible {
+    background-color: rgba(155, 0, 0, 0.527);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 82.9%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-left: 3.5cm;
+    
+  }
+  
+.active, .collapsible:hover {
+    background-color: #9f4646;
+  }
+  
+.content {
+   
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    width: 80%;
+    margin-left: 3.5cm;
+  }
+.hr1 {
+
+    width:24cm;
+    color:white;
+    margin-top: -1.1cm;
+    
+}

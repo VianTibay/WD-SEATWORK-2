@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>SRLCS</title>
+  </head>
+  <style>
+    .boxone{
+      position: fixed;
+  
+      display: inline-block;
+      left: 32%;
+      margin-top: 0px;
+    }
+ 
+    
+
+   
+    body{
+      background-image: url("school3.jpeg");
+      background-size: cover;
+      
+    
+    
+     }  
+    .navigation{
+      height: 130px;
+      width: 35.9cm;
+      background-color:#6C2020;
+      border-width: 3px;
+      border-color:#FFC001;
+      border-style: solid;
+      border-radius: 10px;
+      opacity:0.9;
+margin-left: -239px;
+    }
+    .logopic{
+      display: inline-block;
+      height: 150px;
+      width: 230px;
+    }
+    .textschool{
+    display: inline-end;
+     margin-top: -152px; 
+    margin-left: 200px;
+    }
+    .textS{
+      display: flex;
+      color:#FFC001;
+      font-size: 42.3px;
+      font-weight: bold;
+      margin-right: 150px;
+      margin-bottom: 10px;
+    }
+    .line{
+      width:20cm;
+      margin-left: 0px;
+      margin-top: 0px;
+      
+    }
+    .levels{
+      color:white;
+      font-family:arial;
+      font-size:25px;
+      font-weight:bold;
+    }
+    * {
+  margin: 0;
+  padding: 0;
+  font-family: "segoe ui", verdana, helvetica, arial, sans-serif;
+  font-size: 16px;
+  transition: all 500ms ease; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-setting: "liga" on;
+  width: 25cm;
+  margin-left:6.4cm;
+ 
+}
+   
+   
+.row {
+  background-color: rgba(187, 6, 6, 0.699);
+  color: #fff;
+  text-align: center;
+  padding: 2em 2em 0.5em;
+  width: 90%;
+  margin: 2em	auto;
+  border-radius: 5px; 
+
+  
+}
+  .row h1 {
+    font-size: 2.5em; }
+  .row .form-group {
+    margin: 0.5em 0; }
+    .row .form-group label {
+      display: block;
+      color: #fff;
+      text-align: left;
+      font-weight: 600; }
+    .row .form-group input, .row .form-group button {
+      display: block;
+      padding: 0.5em 0;
+      width: 100%;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+      background-color: inherit;
+      border: none;
+      border-bottom: 1px solid #555;
+      color: #eee; }
+      .row .form-group input:focus, .row .form-group button:focus {
+        background-color: #fff;
+        color: #000;
+        border: none;
+        padding: 1em 0.5em; animation: pulse 1s infinite ease;}
+    .row .form-group button {
+      border: 1px solid #fff;
+      border-radius: 5px;
+      outline: none;
+      -moz-user-select: none;
+      user-select: none;
+      color: #333;
+      font-weight: 800;
+      cursor: pointer;
+      margin-top: 2em;
+      padding: 1em; }
+      .row .form-group button:hover, .row .form-group button:focus {
+        background-color: #fff; }
+      .row .form-group button.is-loading::after {
+        animation: spinner 500ms infinite linear;
+        content: "";
+        position: absolute;
+        margin-left: 2em;
+        border: 2px solid #000;
+        border-radius: 100%;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        height: 1em;
+        width: 4%; }
+  .row .footer h5 {
+    margin-top: 1em; }
+  .row .footer p {
+    margin-top: 2em; }
+    .row .footer p .symbols {
+      color: #444; }
+  .row .footer a {
+    color: inherit;
+    text-decoration: none; }
+
+.information-text {
+  color: #ddd; }
+
+@media screen and (max-width: 320px) {
+  .row {
+    padding-left: 1em;
+    padding-right: 1em; }
+    .row h1 {
+      font-size: 1.5em !important; } }
+@media screen and (min-width: 900px) {
+  .row {
+    width: 50%; } }
+  </style>
+  <body>
+    <section>
+    <div class="navigation">
+     
+      <div class="logos"><img class="logopic"src ="logo3.png">
+        <div class="textschool"><h1 class="textS">St.Rose Of Lima Catholic School  </h1>
+           <hr class="line">
+           <h2 class="levels">Pre-School | Grade School | Junior High-School | Senior High School</h2></div>     
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="row">
+      <h1>Reset Password</h1>
+          <h6 class="information-text">Enter your registered email to reset your password.</h6>
+      <div class="form-group">
+              <input type="email" name="user_email" id="user_email" required>
+        <p><label for="username">Email</label></p>
+        <button onclick="showSpinner()">Reset Password</button>
+      </div>
+  </section>
+  <script>
+    function showSpinner(){
+      location.replace("Forgetpas.html")
+    }
+  </script>
+  </body>
+</html>
+<!--style="margin-left: 8.3cm;
+    margin-top: -1.8cm;"!-->

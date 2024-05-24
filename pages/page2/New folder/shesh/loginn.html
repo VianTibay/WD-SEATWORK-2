@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" type="st rose logo" href="st rose.jpg">
+  <head>
+    <title>SRLCS</title>
+  </head>
+  <style>
+  .center{
+   position: fixed;
+   top:0; left:0; right:0; bottom: 0;
+   background-color: var(--white);
+   z-index: 10000;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.center img{
+   width: 90rem;
+   height: 50rem;
+}
+.slider{
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-left: 36px;
+  
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 400px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #cfb93f;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #cfb93f;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #cfb93f;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #cfb93f;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #cfb93f;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #cfb93f;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #cfb93f;
+}
+      
+     * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1022px;
+  position: absolute;
+  width: 510px;
+  margin-top: 90px;
+
+
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+display:inline-block;
+  transition: background-color 0.6s ease;
+margin-top: 600px;
+margin-right: 200px;
+margin-left: -200px;
+
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+    body{
+    /*background:url(.jpg);
+    */
+    background: black;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+    text-align: center;
+}
+li{
+        display: inline-block;
+ }
+li a{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: brown;
+    
+}
+.active{
+    background-color: red;
+}
+* 
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+.box {
+float: right;
+     position: relative;
+     width: 380px;
+     height: 420px;
+     background: #525252;
+     border-radius: 8px;
+     overflow: hidden;
+     margin-top: 30px;
+     margin-right: 90px;
+
+}
+/*
+.box::before {
+
+     content: '';
+     position: absolute;
+     top: -50%;
+     left: -50%;
+     width:380px;
+     height:420px;
+     background: linear-gradient(0deg,transparent,
+     rgb(244, 6, 6),rgb(244, 67, 3));
+     transform-origin: bottom right;
+     animation: animate 6s linear infinite;
+}
+.box::after{
+
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width:380px;
+    height:420px;
+    background: linear-gradient(0deg,transparent,
+    rgb(241, 49, 6),rgb(250, 33, 5));
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+*/
+
+@keyframes animate
+
+{
+   0%
+   {
+    transform: rotate(0deg);
+   }
+   100%
+   {
+    transform: rotate(360deg);
+   }
+
+}
+
+.form {
+   
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: #28292d;
+    z-index: 10;
+    padding:50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.form h2 {
+
+    color:  rgb(247, 194, 0);
+    font-weight: 500;
+    text-align:center;
+    letter-spacing: 0.1cm;
+
+  }
+
+.inputbox {
+  float: right;
+    position:relative;
+    width: 300px;
+    margin-top: 35px;
+
+}
+
+.inputbox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+.inputbox span {
+
+    position:absolute;
+    left:0px;
+    padding: 20px 0px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.01em;
+    transition: 0.5s;
+
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span {
+
+    color: rgb(241, 102, 9);
+    transform: translateX(0px) translateY(-34px);
+    font-size: 0.75em;
+}
+.inputbox i {
+
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background:  rgb(225, 160, 8);
+    border-radius: 4px;
+    transition: 0.5s;
+    z-index: 9;
+
+}
+.inputbox i{
+    padding-left: 100%;
+
+}
+.inputbox input:valid ~ i,
+.inputbox input:focus ~ i {
+   
+    height: 44px;
+}
+.links {
+
+    display: flex;
+    justify-content: space-between;
+}
+.links a {
+
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+
+}
+
+.links a:hover,
+.links a:nth-child(2) {
+
+    color:rgb(252, 19, 19);
+}
+input[type="submit"] {
+
+    border: none;
+    outline: none;
+    background:rgb(206, 134, 11);
+    padding: 11px 25px;
+    width:100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition-duration:0.4s; 
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+input[type="submit"]:hover {
+
+    background-color:rgb(231, 247, 6);
+   color:black;
+   
+}
+#login-form input[type="password"],
+#login-form input[type="text"]{
+   padding: 12px 36px 12px 12px; 
+    
+}
+    .boxone{
+      position: fixed;
+
+      display: inline-block;
+      left: 32%;
+      margin-top: 0px;
+    }
+ 
+    
+
+   
+    body{
+      background-image: url("school3.jpeg");
+      background-size: cover;
+      
+    
+    
+     }  
+    .navigation{
+      height: 170px;
+      width: auto;
+      margin: 0px;
+      background-color:#6C2020;
+      border-width: 3px;
+      border-color:#FFC001;
+      border-style: solid;
+      border-radius: 10px;
+      opacity:0.9;
+    }
+    .logopic{
+      display: inline-block;
+      height: 199px;
+      width: 210px; 
+    }
+    .textschool{
+    display: inline-end;
+     margin-top: -162px; 
+    margin-left: 179px;
+    
+    
+    }
+    .textS{
+      display: flex;
+      color:#FFC001;
+      font-size: 42.3px;
+      font-weight: bold;
+      margin-right: 150px;
+      margin-bottom: 10px;
+    }
+    .line{
+      width:30cm;
+      margin-left: 0px;
+      margin-top: 0px;
+      
+    }
+    .levels{
+      color:white;
+      font-family:arial;
+      font-size:25px;
+      font-weight:bold;
+    }
+    </style>
+  <body>
+    <section>
+    <div class="navigation">
+     
+      <div class="logos"><img class="logopic"src ="logo3.png">
+        <div class="textschool"><h1 class="textS">St.Rose Of Lima Catholic School  </h1>
+           <hr class="line">
+           <h2 class="levels">Pre-School | Grade School | Junior High-School | Senior High School</h2></div>        
+      </div>
+    </div>
+    </section>
+    <section>
+      <form action="mainpage.html" id="login-form">
+        <div class="box">
+         <div class="form">
+           <h2>LOGIN FORM</h2>
+            <div class="inputbox">
+             <input type="text" required>
+             <span  class="fa fa-user icon">EMAIL</span>
+            <i></i>
+          </div>
+          <div class="inputbox">
+        <input  type="password" id="password" required>
+        <span class="fa fa-key icon">PASSWORD</span>
+        <i></i>
+       </div>
+       <i style="margin-left: 8cm; margin: -28px; padding-left: 333px;"
+       class="fa-solid fa-eye" id="show-password"></i><br>
+       <br>
+        <div class="links">
+          <a href="emailreset.html">FORGOT PASSWORD</a><br>
+          <a href="signn-up.html">Register</a>
+        </div>
+         <input  type="submit" value="login" onclick="mySheshfuction()"></button>
+           </div>
+           </div>
+         </form>
+         </section>
+         <section>
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <div class="slide first">
+          <img src="ilol.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="dogs.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="st.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="king.jpg" alt="">
+        </div>
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      </div>
+           <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <div class="center">
+        <img src="opo.gif" alt="">
+     </div>
+    </div>
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 4000);
+    const showPassword = document.querySelector("#show-password");
+        const  passwordField = document.querySelector("#password");
+
+        showPassword.addEventListener("click", function(){
+            this.classList.toggle("fa-eye-slash");
+            const type = passwordField.getAttribute("type")
+            === "password" ? "text" : "password";
+            passwordField.setAttribute("type", type);
+        })
+function mySheshfuction(){
+  alert("Welcome Back User!")
+}
+function ring(){
+    document.querySelector('.center').style.display = 'none';
+  }
+  function fadeOut(){
+    setInterval(ring,2000);
+  }
+  window.onload = fadeOut;
+    </script>
+
+  </body>
+</html>
+      
+         </section>
+    </section>
+  </body>
+</html>
