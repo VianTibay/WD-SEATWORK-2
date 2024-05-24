@@ -27,7 +27,7 @@
 <br />
 <br />
 
-<!-- TODO: If you want to add more layers for your readme -->
+<!-- TODO: If you want to add more layers for your readm -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
