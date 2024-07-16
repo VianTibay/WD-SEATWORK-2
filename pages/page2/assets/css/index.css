@@ -1,0 +1,152 @@
+.center{
+  position: fixed;
+  top:0; left:0; right:0; bottom: 0;
+  background-color: var(--white);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center img{
+  width: 90rem;
+  height: 50rem;
+}
+.login{
+     background-color:#6C2020;
+     color:#FFC001;
+     height: 70px;
+     width: 200px;
+     font-size: 25px;
+     border-radius: 15px;
+     cursor: pointer;
+     font-family: "Verdana";
+     border-color:#FFC001;
+     border-width: 2px;
+     border-style: solid;
+     font-weight: bold;
+     margin-right: 100px;
+     display: inline-block;
+     
+   
+     
+    }
+   .login:hover{
+     color:#6C2020;
+     background-color: #FFC001;
+     font-family: "Verdana";
+     border-color:black;
+     font-size: 30px;
+     font-weight:bold ;
+     border-color:transparent;
+     text-decoration: underline;
+ 
+   }
+   .register:hover{
+     color:#6C2020;
+     background-color:#FFC001;
+     font-family: "Verdana";
+     border-color:black;
+     font-size: 30px;
+     font-weight:bold ;
+     border-color:transparent;
+     text-decoration: underline;
+ 
+   }
+   .register{
+     background-color: #6C2020;
+     color:#FFC001;
+     height: 70px;
+     width: 220px;
+     font-size: 25px;
+     border-radius: 15px;
+     cursor: pointer;
+     font-family: "Verdana";
+     border-color:#FFC001;
+     border-width: 2px;
+     border-style: solid;
+     font-weight: bold;;
+     display: inline-block;
+     position: fixed;
+ 
+     
+   }
+   .boxone{
+     position: fixed;
+ 
+     display: inline-block;
+     left: 32%;
+     margin-top: 0px;
+   }
+
+   
+
+  
+   body{
+     background-image: url("../img/");
+     background-size: cover;
+  
+   
+   
+    }  
+   .navigation{
+     height: 210px;
+     width: auto;
+     margin: 0px;
+     background-color:#6C2020;
+     border-width: 3px;
+     border-color:#FFC001;
+     border-style: solid;
+     border-radius: 10px;
+     opacity:0.9;
+   
+   }
+   .logopic{
+     display: inline-block;
+     height: 210px;
+     width: 230px;
+   
+   }
+   .textschool{
+   display: inline-end;
+    margin-top: -212px; 
+   margin-left: 200px;
+ 
+ }
+   .textS{
+     display: flex;
+     color:#FFC001;
+     font-size: 42.3px;
+     font-weight: bold;
+     margin-right: 550px;
+     margin-bottom: 10px;
+   
+   }
+   .line{
+     width:30cm;
+     margin-left: 0px;
+     margin-top: 0px;
+   
+   }
+   .levels{
+     color:white;
+     font-family:arial;
+     font-size:25px;
+     font-weight:bold;
+   
+   
+   }
+     
+   .icon{
+     margin-left:453px;
+     margin-top: 100px;
+     margin-bottom: 0px;
+   }
+   .icons{
+   
+     height: 150px;
+     width: 150px;
+     display: inline-block;
+     margin-right: 170px;
+   
+   }
