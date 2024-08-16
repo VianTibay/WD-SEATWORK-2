@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppsins',sans-serif;
+    
+    }
+    body{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background: url("../assets/img/school3.jpeg")
+    }
+    .container{
+        max-width: 700px;
+        width: 100%;
+        background: #fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+    }
+    .container .title{
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+    }
+    .container .title::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 30px;
+        background: linear-gradient(135deg,#e4af11,#d11313);
+    }
+    .container form .user-details{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0 12px 0;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: calc(100% / 2 - 20px);
+    }
+    .user-details .input-box .details{
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .user-details .input-box input{
+        height: 45px;
+        width: 100%;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding-left: 15px;
+        font-size: 16px;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+    }
+    .user-details .input-box input:focus,
+    .user-details .input-box input:valid{
+    border-color: #e4af11;
+    }
+    form .Gender-details .gender-title{
+        font-size:  20px;
+        font-weight: 500;
+    
+    }
+    form .Gender-details .Category{
+        display: flex;
+        width: 80%;
+        margin: 14px 0;
+        justify-content: space-around;
+    }
+    .Gender-details .Category label{
+    display: flex;
+    align-items: center;
+    }
+    .Gender-details .Category .dot{
+        height: 18px;
+        width: 18px;
+        background: #d9d9d9;
+        border-radius: 50%;
+        margin-right: 10px;
+        border: 5px solid transparent ;
+    }
+    #dot-1:checked ~ .Category label .one,
+    #dot-2:checked ~ .Category label .two,
+    #dot-3:checked ~ .Category label .three{
+        border-color: #d9d9d9;
+        background:#e4af11;
+    }
+    form input[type="radio"]{
+        display: none;
+    }
+    form .button{
+        height: 45px;
+        margin: 45px 0;
+    }
+    form .button input{
+        height: 100%;
+        width: 100%;
+        outline: none;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        background: linear-gradient(135deg,#e4b311,#d11313);
+    
+    }
+    form .button input:hover{
+        background: linear-gradient(135deg,#e4c811,#d40f0f)
+    }
+    #eye{
+        margin-left: -29px;
+        margin-top: 15px;
+        position:fixed;
+    }
+    #le{
+        margin: 15px;
+        margin-left: 1.5px;
+    }
+    
+    @media (max-width: 584px){
+        .container{
+        max-width: 100%;
+        }
+        form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+      }
+      form .Gender-details .Category{
+        width: 100%;
+      }
+      .container form .user-details{
+        max-width: 300px;
+        overflow-y: scroll;
+      }
+      user-details::-webkit-scrollbar{
+        width: 0,
+      }
+    }
+    body{
+          background-image: url("school3.jpeg");
+          background-size: cover;
+          
+        
+        
+         }  
+        .navigation{
+          height: 210px;
+          width: auto;
+          margin: 0px;
+          background-color:#6C2020;
+          border-width: 3px;
+          border-color:#FFC001;
+          border-style: solid;
+          border-radius: 10px;
+          opacity:0.9;
+        }
+        .logopic{
+          display: inline-block;
+          height: 210px;
+          width: 230px;
+        }
+        .textschool{
+        display: inline-end;
+         margin-top: -212px; 
+        margin-left: 200px;
+        }
+        .textS{
+          display: flex;
+          color:#FFC001;
+          font-size: 42.3px;
+          font-weight: bold;
+          margin-right: 550px;
+          margin-bottom: 10px;
+        }
+        .line{
+          width:30cm;
+          margin-left: 0px;
+          margin-top: 0px;
+          
+        }
+        .levels{
+          color:white;
+          font-family:arial;
+          font-size:25px;
+          font-weight:bold;
+        }

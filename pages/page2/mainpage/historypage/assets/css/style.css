@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create a column layout with Flexbox */
+  .row {
+    display: flex;
+  }
+  
+  /* Left column (menu) */
+  .left {
+    flex: 35%;
+    padding: 15px 0;
+  }
+  
+  .left h2 {
+    padding-left: 8px;
+  }
+  
+  /* Right column (page content) */
+  .right {
+    flex: 65%;
+    padding: 15px;
+  }
+  
+  /* Style the search box */
+  #mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the navigation menu inside the left column */
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block
+  }
+  
+  #myMenu li a:hover {
+    background-color: #eee;
+  }
+      .login{
+            background-color:#6C2020;
+            color:#FFC001;
+            height: 70px;
+            width: 200px;
+            font-size: 25px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-family: "Verdana";
+            border-color:#FFC001;
+            border-width: 2px;
+            border-style: solid;
+            font-weight: bold;
+            margin-right: 100px;
+            display: inline-block;
+            
+          
+            
+           }
+          .login:hover{
+            color:#6C2020;
+            background-color: #FFC001;
+            font-family: "Verdana";
+            border-color:black;
+            font-size: 30px;
+            font-weight:bold ;
+            border-color:transparent;
+            text-decoration: underline;
+        
+          }
+          .register:hover{
+            color:#6C2020;
+            background-color:#FFC001;
+            font-family: "Verdana";
+            border-color:black;
+            font-size: 30px;
+            font-weight:bold ;
+            border-color:transparent;
+            text-decoration: underline;
+        
+          }
+          .register{
+            background-color: #6C2020;
+            color:#FFC001;
+            height: 70px;
+            width: 220px;
+            font-size: 25px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-family: "Verdana";
+            border-color:#FFC001;
+            border-width: 2px;
+            border-style: solid;
+            font-weight: bold;;
+            display: inline-block;
+            position: fixed;
+        
+            
+          }
+          .boxone{
+            position: fixed;
+        
+            display: inline-block;
+            left: 32%;
+            margin-top: 0px;
+          }
+       
+          
+      
+         
+          body{
+            background-image: url("school3.jpeg");
+            background-size: cover;
+            
+          
+          
+           }  
+          .navigation{
+            height: 210px;
+            width: auto;
+            margin: 0px;
+            background-color:#6C2020;
+            border-width: 3px;
+            border-color:#FFC001;
+            border-style: solid;
+            border-radius: 10px;
+            opacity:0.9;
+          }
+          .logopic{
+            display: inline-block;
+            height: 210px;
+            width: 230px;
+          }
+          .textschool{
+          display: inline-end;
+           margin-top: -212px; 
+          margin-left: 200px;
+          }
+          .textS{
+            display: flex;
+            color:#FFC001;
+            font-size: 33px;
+            font-weight: bold;
+            margin-right: 550px;
+            margin-bottom: 10px;
+          }
+          .line{
+            width:27cm;
+            margin-left: 0px;
+            margin-top: 0px;
+            
+          }
+          .levels{
+            color:white;
+            font-family:arial;
+            font-size:25px;
+            font-weight:bold;
+          }
+            
+          .icon{
+            margin-left:453px;
+            margin-top: 100px;
+            margin-bottom: 0px;
+          }
+          .icons{
+          
+            height: 150px;
+            width: 150px;
+            display: inline-block;
+            margin-right: 170px;
+            
+          }

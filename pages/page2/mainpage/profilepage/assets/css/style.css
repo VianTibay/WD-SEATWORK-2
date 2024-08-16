@@ -1,0 +1,383 @@
+
+ *body {
+          
+          height: 100%;
+          margin: 0;
+          }
+  
+  
+  
+  .bg-image {
+            background-size: 100% 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+  
+      .img1 {background-image: url('../img/bgpic1.jpg')}
+      
+      
+
+.header {
+
+    width: 100%;
+    height: 3cm;
+    margin-left: -635px;
+    margin-top: -9.2cm;
+    margin-right: -8px;
+    background-color:rgba(155, 0, 0, 0.527);
+    position: fixed;
+    top:50%;
+    left: 50%;
+}
+
+.header img {
+    
+    width: auto;
+    height: 100%; 
+    margin-left: 40px;
+}
+
+
+.text  {
+
+    margin-left: 180px;
+    font-size: 30;
+    margin-top: -95px;
+    letter-spacing: 5;
+    color: darkgoldenrod;
+}
+.text1 {
+
+    margin-left: 180px;
+    margin-top: -20px;
+    letter-spacing: 5;
+}
+
+.profile1  {
+
+    width:2cm;
+    height:2cm;
+    margin-left:20px;
+    background-color:white ;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 40px;
+    padding-top: 10px;
+    
+   
+    
+    
+}
+
+.profile1:hover{
+     
+    background-color: rgb(179, 57, 57);
+    transition-duration: 0.4s;
+}
+
+
+.box1 {
+
+    width:3cm;
+    height: 10cm;
+    background-color: rgba(179, 177, 177, 0.537);
+    margin-top: -200px;
+    margin-left: -16.4cm;
+    border-radius: 20px;
+    position: fixed;
+    top:50%;
+    left: 635px;
+
+}
+
+ .School {
+
+    width:2cm;
+    height:2cm;
+    margin-left:20px;
+    background-color:white ;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 10px;
+    padding-top: 10px;
+    
+    
+}
+
+.School:hover{
+     
+    background-color: rgb(179, 57, 57);
+    transition-duration: 0.4s;
+}
+.About {
+
+    width:2cm;
+    height:2cm;
+    margin-left:20px;
+    background-color:white ;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 15px;
+    padding-top: 10px;
+    
+    
+}
+
+.About:hover{
+     
+    background-color: rgb(179, 57, 57);
+    transition-duration: 0.4s;
+}
+
+.profile-box001 {
+
+    width: 28cm;
+    height: 14cm;
+    margin-left: 4.3cm;
+    background-color: rgba(185, 185, 185, 0.701);
+    margin-top:-15.2cm;
+    border-radius: 8px;
+
+}
+#profile-pic {
+  float: left;
+  margin-right: 20px;
+ margin-top: 40px;
+  width: 100px;
+  height: 100px;
+  margin-left: 1cm;
+}
+/*save changes button*/
+.btnfile1 {
+
+    width:5cm;
+    height: 1.3cm;
+    background-color: rgba(255, 255, 255, 0.427);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 0.2cm;
+    margin-left:455px;
+
+}
+.btnfile1:hover {
+    background-color: rgba(186, 73, 73, 0.916);
+    transition: 0.4s;
+}
+
+
+.fname {
+
+    margin-left: 5cm;
+    width: 6cm;
+    height: 1.2cm;
+    border:solid maroon;
+    background-color: rgba(255, 255, 255, 0.628);
+    margin-top: -380px;
+    margin-left: 8cm;
+    border-radius: 4px;
+
+  }   
+.lname {
+
+    margin-left: 5cm;
+    width: 6cm;
+    height: 1.2cm;
+    border:solid maroon;
+    background-color: rgba(255, 255, 255, 0.628);
+    margin-top: -310px;
+    margin-left: 8cm;
+    border-radius: 4px;
+
+}
+.mname {
+
+  margin-left: 5cm;
+  width: 6cm;
+  height: 1.2cm;
+  border:solid maroon;
+  background-color: rgba(255, 255, 255, 0.628);
+  margin-top: -260px;
+  margin-left: 8cm;
+  border-radius: 4px;
+
+}
+.Bdate {
+
+  margin-left: 5cm;
+  width: 6cm;
+  height: 1.2cm;
+  border:solid maroon;
+  background-color: rgba(255, 255, 255, 0.628);
+  margin-top: -210px;
+  margin-left: 8cm;
+  border-radius: 4px;
+
+}
+.Email {
+
+  width: 6cm;
+  height: 1.2cm;
+  border:solid maroon;
+  background-color: rgba(255, 255, 255, 0.628);
+  margin-top: -452px;
+  margin-left: 15cm;
+  border-radius: 4px;
+
+}
+.form1 { 
+   margin: 2em;
+   line-height: 2em;
+}
+.Gender {
+
+  width: 6cm;
+  height: 1.2cm;
+  border:solid maroon;
+  background-color: rgba(255, 255, 255, 0.628);
+  margin-top: -414px;
+  margin-left: 15cm;
+  border-radius: 4px;
+
+}
+.LRN{
+
+  width: 6cm;
+  height: 1.2cm;
+  border:solid maroon;
+  background-color: rgba(255, 255, 255, 0.628);
+  margin-top: -344px;
+  margin-left: 15cm;
+  border-radius: 4px;
+
+}
+.Logout {
+
+  width:50px;
+  height: 55px;
+  border-radius: 5px;
+  margin-left: 30cm;
+  margin-top: -30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.logout:hover{
+    background-color: maroon;
+    transition: 0.5s;
+}
+.profile-text1 {
+
+  margin-top: -510;
+  margin-left: 14.5cm;
+  font-size: 30;
+  letter-spacing: 10px;
+}
+.profile-line {
+
+    width:30%;
+    margin-top: -20px;
+    margin-left: 13.6cm;
+}
+.Home {
+  width:1.2cm;
+  height: 1.2cm;
+  margin-left: 28.5cm;
+  margin-top: -71px;
+  cursor: pointer;
+  border-radius: 70%;
+ padding-bottom: 27px;
+ padding-top: -10px;
+}
+
+.Home:hover{
+    background-color: maroon;
+    transition: 0.5s;
+
+}
+.hr1 {
+
+width:24cm;
+color:white;
+margin-top: -1.5cm;
+margin-left:-24cm;
+
+}
+#tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+#tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+#tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+#tooltips {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+#tooltips .tooltiptexts {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#tooltips .tooltiptexts::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+#tooltips:hover .tooltiptexts {
+  visibility: visible;
+  opacity: 1;
+}

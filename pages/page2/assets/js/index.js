@@ -1,9 +1,9 @@
-function myFuction(){
-    location.replace("login.html")
+function myLogin(){
+    location.replace("../page2/formLogin/index.html")
 
 }   
-function sheshFuction(){
-location.replace("signn-up.html")
+function Register(){
+location.replace("../page2/formSignup/index.html")
 }
 function ring(){
 document.querySelector('.center').style.display = 'none';

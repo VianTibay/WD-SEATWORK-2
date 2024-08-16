@@ -1,0 +1,190 @@
+  
+  * {
+    box-sizing: border-box;
+  }
+body{
+  background-color: #0f051d;
+}  
+  .columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+  }
+  
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  #more {display: none;}
+  
+  .button {
+    background-color: #aa043b;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    }
+  }
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Space Grotesk', sans-serif;
+      text-decoration: none;
+  }
+  .team{
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: radial-gradient(#281c3e,#0f051d);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+  .team-content{
+      width: 100%;
+      max-width: 1350px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+      align-items: center;
+      gap: 2rem;
+      text-align: center;
+      margin-top: 4rem;
+  }
+  .team-content img{
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      margin-bottom: 15px;
+  }
+  .center h1{
+      color: #fff;
+      font-size: 4rem;
+      text-align: center;
+  }
+  .box{
+      padding: 16px;
+      background: #1b1229;
+      border-radius: 15px;
+      transition: all .38s ease;
+  }
+  .box h3{
+      font-size: 23px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 8px;
+  }
+  .box h5{
+      font-size: 15px;
+      font-weight: 600;
+      color: #b7b4bb;
+      margin-bottom: 15px;
+      letter-spacing: 2px;
+  }
+  .icons i{
+      display: inline-block;
+      color: #fff;
+      font-size: 20px;
+      margin: 0 8px;
+      transition: all .38s ease;
+  }
+  .icons i:hover{
+      transform: scale(1.2);
+  }
+  .box:hover{
+      transform: translateY(-10px);
+      cursor: pointer;
+  
+  }
+  #myBtn{
+    background-color: rgb(15, 233, 215);
+    height: 50px;
+    width: 100px;
+    text-transform: capitalize;
+    box-shadow: #fff 9 8 9 10;
+    padding: 10 20 30;
+    color: red;
+    border-radius: 80px;
+    margin-left: 631px;
+    margin-top: 36px;
+    position: relative;
+    left: -7.9rem;
+    
+  
+  }
+  .about{
+padding: 3rem;
+margin: 1rem 3rem;
+
+  }
+  .back{
+    padding: 10px;
+    background-color: grey;
+    transition: trasnsform .2s;
+    width: 70px;
+    height: 45px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: medium;
+    font-family:'Segoe UI' Verdana, sans-serif;
+    border-radius: 19%;
+    display: flex;
+    justify-content: center;
+ align-items: center;
+
+ position: relative;
+  top: -7%;
+  }
+  .back:hover{
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.2);
+    
+  
+  }
+  
+  @media(max-width: 1240px){
+      .team{
+          width: 100%;
+          height: auto;
+          padding: 90px 2%;
+      }
+      .center h1{
+          font-size: 3.2rem;
+      }
+  }
+  
