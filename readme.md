@@ -6,7 +6,7 @@
 <div align="center">
   <a href="https://github.com/VianTibay">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/hehe.jpg" alt="Men-Picture" width="200" height="199">
+    <img src="#" alt="Men-Picture" width="200" height="199">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">Rotciv</h3>
