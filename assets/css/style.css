@@ -21,12 +21,19 @@
 } */
 body{
   background-color: #a798c387;
+
 }
   .header{
 padding: 2vh;
 margin: 2px;
 background-color: rgb(101, 101, 101);
+position: sticky;
+top: 0;
+padding: 1rem;
+margin: 2rem;
+z-index: 1;
 }
+
   .header nav a{
     display: flex;
     text-decoration: none;
